@@ -1,0 +1,25 @@
+{
+    "name": "Thai Zoom",
+    "version": "0.1",
+    "manifest_version" : 3,
+    "description": "Does some simple stuff",
+    "action": {},
+    "background" : {
+      "service_worker" : "background.js"
+    },
+    "permissions": [
+        "scripting",
+        "activeTab"
+    ],
+    "web_accessible_resources": [
+        {
+            "resources": [
+                "fonts/noto_serif_thai.woff2",
+                "fonts/noto_serif_thai_latin_ext.woff2",
+                "fonts/noto_serif_thai_latin.woff2"
+            ],
+            "matches": ["<all_urls>"],
+            "use_dynamic_url": true
+        }
+    ]
+}
